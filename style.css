@@ -98,19 +98,3 @@ body {
 #generate-btn:active {
   transform: translate(0px, 3px);
 }
-
-.item-1 {
-  background-color: #2f4f8f;
-}
-.item-2 {
-  background-color: #4d73b8;
-}
-.item-3 {
-  background-color: #6c95d8;
-}
-.item-4 {
-  background-color: #9dbbea;
-}
-.item-5 {
-  background-color: #d0e1f7;
-}

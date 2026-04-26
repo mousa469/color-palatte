@@ -101,13 +101,22 @@ let colorItem;
 let colorInfo;
 let color;
 let copyIcon;
+let checkIcon;
 colorsContainer.addEventListener("click", function (e) {
   if (e.target.classList.contains("copy-btn")) {
     const colorValue = e.target.previousElementSibling.textContent;
 
     navigator.clipboard.writeText(colorValue);
+    let originalIcon = e.target;
+    checkIcon = document.createElement("i");
+    checkIcon.style.color = "green";
+    checkIcon.classList.add("fa-solid", "fa-check");
+
+    originalIcon.replaceWith(checkIcon);
 
     console.log("Copied:", colorValue);
+
+    // setTimeout(() => checkIcon.replaceWith(originalIcon), 1000);
   }
 });
 
